@@ -24,18 +24,39 @@ int main() {
     // printf("%s\n", text1); // 출력: Hey, how are you?
     // return 0;
 
-    // strcmp
-    char text1[] = "abcd";
-    char text2[] = "abcd";
-    char text3[] = "abef";
+    // // strcmp
+    // char text1[] = "abcd";
+    // char text2[] = "abcd";
+    // char text3[] = "abef";
 
-    // 같은 문자열 비교
-    int result1 = strcmp(text1, text2);
-    printf("strcmp(text1, text2) = %d\n", result1); // 출력: 0
+    // // 같은 문자열 비교
+    // int result1 = strcmp(text1, text2);
+    // printf("strcmp(text1, text2) = %d\n", result1); // 출력: 0
 
-    // 다른 문자열 비교
-    int result2 = strcmp(text1, text3);
-    printf("strcmp(text1, text3) = %d\n", result2); // 출력: 0이 아닌 값 (예: -4)
+    // // 다른 문자열 비교
+    // int result2 = strcmp(text1, text3);
+    // printf("strcmp(text1, text3) = %d\n", result2); // 출력: 0이 아닌 값 (예: -4)
+
+    // return 0;
+
+    // int age = 25;
+    // int *ptr; // 포인터 변수 선언
+
+    // ptr = &age; // age 변수의 주소를 ptr에 할당
+
+    // printf("age의 주소: %p\n", &age);
+    // printf("ptr에 저장된 값: %p\n", ptr); // age의 주소와 동일한 값이 출력됨
+
+    // return 0;
+
+    int age = 25;
+    int *ptr = &age; // 선언과 동시에 주소 할당
+
+    // 주소 출력
+    printf("ptr의 값 (age의 주소): %p\n", ptr);
+
+    // 역참조를 통한 값 출력
+    printf("*ptr의 값 (age의 값): %d\n", *ptr); // 출력: 25
 
     return 0;
 }
