@@ -49,14 +49,25 @@ int main() {
 
     // return 0;
 
+    // int age = 25;
+    // int *ptr = &age; // 선언과 동시에 주소 할당
+
+    // // 주소 출력
+    // printf("ptr의 값 (age의 주소): %p\n", ptr);
+
+    // // 역참조를 통한 값 출력
+    // printf("*ptr의 값 (age의 값): %d\n", *ptr); // 출력: 25
+
+    // return 0;
+
     int age = 25;
-    int *ptr = &age; // 선언과 동시에 주소 할당
+    int *ptr = &age;
 
-    // 주소 출력
-    printf("ptr의 값 (age의 주소): %p\n", ptr);
+    printf("변경 전 age의 값: %d\n", age); // 출력: 25
 
-    // 역참조를 통한 값 출력
-    printf("*ptr의 값 (age의 값): %d\n", *ptr); // 출력: 25
+    *ptr = 31; // ptr이 가리키는 곳의 값을 31로 변경
+
+    printf("변경 후 age의 값: %d\n", age); // 출력: 31
 
     return 0;
 }
