@@ -15,12 +15,27 @@ int main() {
     // printf("Best food: %s\n", best_food); // 출력: Best food: Pizza
     // return 0;
 
-    // strcat
-    char text1[50] = "Hey, ";
-    char text2[] = "how are you?";
+    // // strcat
+    // char text1[50] = "Hey, ";
+    // char text2[] = "how are you?";
 
-    strcat(text1, text2);
+    // strcat(text1, text2);
 
-    printf("%s\n", text1); // 출력: Hey, how are you?
+    // printf("%s\n", text1); // 출력: Hey, how are you?
+    // return 0;
+
+    // strcmp
+    char text1[] = "abcd";
+    char text2[] = "abcd";
+    char text3[] = "abef";
+
+    // 같은 문자열 비교
+    int result1 = strcmp(text1, text2);
+    printf("strcmp(text1, text2) = %d\n", result1); // 출력: 0
+
+    // 다른 문자열 비교
+    int result2 = strcmp(text1, text3);
+    printf("strcmp(text1, text3) = %d\n", result2); // 출력: 0이 아닌 값 (예: -4)
+
     return 0;
 }
